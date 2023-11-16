@@ -104,7 +104,7 @@ int parse_line(char *buffer, int line_number, int format)
 	if (strcmp(opcode, "queue") == 0)
 		return (1);
 
-	find_func(opcode, value, line_number, format);
+	find_function(opcode, value, line_number, format);
 	return (format);
 }
 
@@ -148,7 +148,7 @@ void find_function(char *opcode, char *value, int ln, int format)
 	{
 		if (strcmp(opcode, func_list[k].opcode) == 0)
 		{
-			call_fun(func_list[k].f, opcode, value, ln, format);
+			call_function(func_list[k].f, opcode, value, ln, format);
 			flag = 0;
 		}
 	}

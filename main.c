@@ -1,3 +1,5 @@
+#include "monty.h"
+
 stack_t *head = NULL;
 
 /**
@@ -30,7 +32,7 @@ stack_t *create_node(int n)
 
 	node = malloc(sizeof(stack_t));
 	if (node == NULL)
-		err(4);
+		error(4);
 	node->next = NULL;
 	node->prev = NULL;
 	node->n = n;
