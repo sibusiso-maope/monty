@@ -64,7 +64,6 @@ void rotl(stack_t **, unsigned int);
 void open_file(char *file_name);
 int parse_line(char *buffer, int line_number, int format);
 void read_file(FILE *);
-size_t getline (char **string, size_t *n, FILE *stream);
 int len_chars(FILE *);
 void find_function(char *, char *, int, int);
 

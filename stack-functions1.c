@@ -31,11 +31,11 @@ void add_nodes(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * div_nodes - Adds the top two elements of the stack.
+ * divide_nodes - Adds the top two elements of the stack.
  * @stack: Pointer to a pointer pointing to top node of the stack.
  * @line_number: Interger representing the line number of of the opcode.
  */
-void div_nodes(stack_t **stack, unsigned int line_number)
+void divide_nodes(stack_t **stack, unsigned int line_number)
 {
 	int sum;
 
@@ -52,11 +52,11 @@ void div_nodes(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * sub_nodes - Adds the top two elements of the stack.
+ * subtract_nodes - Adds the top two elements of the stack.
  * @stack: Pointer to a pointer pointing to top node of the stack.
  * @line_number: Interger representing the line number of of the opcode.
  */
-void sub_nodes(stack_t **stack, unsigned int line_number)
+void subtract_nodes(stack_t **stack, unsigned int line_number)
 {
 	int sum;
 
